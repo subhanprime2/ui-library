@@ -1,5 +1,5 @@
 {
-  "name": "ui-library",
+  "name": "@subhanprime2/ui-library",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -17,5 +17,8 @@
   },
   "peerDependencies": {
     "react": "^18.2.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/subhanprime2"
   }
 }
