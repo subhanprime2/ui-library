@@ -11,7 +11,10 @@
   "license": "ISC",
   "devDependencies": {
     "@types/react": "^18.2.45",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
     "react": "^18.2.0",
+    "tailwindcss": "^3.3.6",
     "typescript": "^5.3.3",
     "vite": "^5.0.8"
   },
@@ -20,5 +23,9 @@
   },
   "publishConfig": {
     "@subhanprime2:registry": "https://npm.pkg.github.com"
+  },
+  "dependencies": {
+    "framer-motion": "^10.16.16",
+    "lucide-react": "^0.298.0"
   }
 }
