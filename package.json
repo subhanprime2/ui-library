@@ -1,11 +1,11 @@
 {
   "name": "@subhanprime2/ui-library",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "vite build && tsc"
+    "build": "vite build && tsc && uglifyjs src/index.tsx -o dist/index.min.js -m"
   },
   "author": "",
   "license": "ISC",
@@ -20,5 +20,8 @@
   },
   "publishConfig": {
     "@subhanprime2:registry": "https://npm.pkg.github.com"
+  },
+  "dependencies": {
+    "@subhanprime2/ui-library": "^1.1.0"
   }
 }
