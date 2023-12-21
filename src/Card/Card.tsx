@@ -9,7 +9,7 @@ export interface CardProps {
 function Card({
   title,
   children,
-}: React.PropsWithChildren<CardProps>) {
+}: React.PropsWithChildren<CardProps>): JSX.Element {
   return (
     <article data-card>
       <h2>subhan</h2>

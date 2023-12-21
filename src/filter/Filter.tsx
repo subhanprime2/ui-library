@@ -43,7 +43,7 @@ function Filter({
   addSelectedFilter,
   updateSelectedFilter,
   deleteSelectedFilter,
-}:FilterProps) {
+}:FilterProps):JSX.Element {
   const [isOpen, setIsOpen] = useState(false);
   const [iconFlag, setIconFlag] = useState(false);
   const [search, setSearch] = useState('');
