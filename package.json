@@ -1,22 +1,40 @@
 {
   "name": "@subhanprime2/ui-library",
   "version": "1.2.2",
-  "description": "",
+  "description": "Your package description goes here",
   "main": "index.tsx",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js"
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "vite build && tsc && uglifyjs src/index.tsx -o dist/index.min.js -m"
+    "build": "vite build && tsc && webpack --config webpack.config.js"
   },
-  "author": "",
+  "author": "Your Name",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.23.6",
+    "@babel/preset-env": "^7.23.6",
+    "@babel/preset-react": "^7.23.3",
+    "@babel/preset-typescript": "^7.23.3",
     "@types/react": "^18.2.45",
     "autoprefixer": "^10.4.16",
+    "babel-loader": "^9.1.3",
+    "css-loader": "^6.8.1",
     "postcss": "^8.4.32",
+    "postcss-loader": "^7.3.3",
     "react": "^18.2.0",
+    "style-loader": "^3.3.3",
     "tailwindcss": "^3.3.6",
+    "terser-webpack-plugin": "^5.3.9",
+    "ts-loader": "^9.5.1",
     "typescript": "^5.3.3",
-    "vite": "^5.0.8"
+    "vite": "^5.0.8",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
   },
   "peerDependencies": {
     "react": "^18.2.0"
@@ -28,5 +46,8 @@
     "@subhanprime2/ui-library": "^1.2.1",
     "framer-motion": "^10.16.16",
     "lucide-react": "^0.298.0"
-  }
+  },
+  "files": [
+    "dist"
+  ]
 }
