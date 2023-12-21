@@ -2,7 +2,10 @@ const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
   mode: 'production',
-  entry: './src/index.tsx',
+  entry: {
+    main: './dist/index.min.js', // Entry point of your built project
+    vendor: ['@subhanprime2/ui-library/dist'] // Specify the library from the dist folder here
+  },
   output: {
     filename: 'index.min.js',
     library: '@subhanprime2/ui-library',
