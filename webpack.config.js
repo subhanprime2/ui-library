@@ -29,6 +29,10 @@ module.exports = {
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
     modules: ['node_modules', './dist'],
+    extensions: ['.tsx', '.ts', '.js'],
+    alias: {
+      '@subhanprime2/ui-library': path.resolve(__dirname, 'node_modules/@subhanprime2/ui-library/dist'),
+    }
   },
   optimization: {
     minimize: true,

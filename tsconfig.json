@@ -1,5 +1,11 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@subhanprime2/ui-library": [
+        "node_modules/@subhanprime2/ui-library/dist"
+      ]
+    },
     "target": "es2016",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
