@@ -1,20 +1,15 @@
 {
   "name": "@subhanprime2/ui-library",
-  "version": "1.2.13",
+  "version": "1.2.14",
   "description": "Your package description goes here",
-  "main": "./src/index.tsx",
+  "main": "dist/cjs/index.js",
   "types": "dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/index.esm.js"
-    }
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "vite build && tsc && webpack --config webpack.config.js",
     "rollup": "rollup -c"
   },
-  "author": "Your Name",
+  "author": "Subhan Ali",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.23.4",
