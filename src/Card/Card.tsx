@@ -3,20 +3,19 @@ import React from "react";
 import "./Card.css";
 
 export interface CardProps {
-    img: { src: string; alt: string };
-    title: string;
+  title?: string;
 }
 
-export function Card ({
-    img,
-    title,
-    children,
+function Card({
+  title,
+  children,
 }: React.PropsWithChildren<CardProps>) {
-    return (
-      <article data-card>
-    	<img data-card-img src={img.src} alt={img.alt} />
-   	 <h2>{title}</h2>
-   	 {children}
-      </article>
-    );
+  return (
+    <article data-card>
+      <h2>subhan</h2>
+      sss
+    </article>
+  );
 }
+
+export default Card;
