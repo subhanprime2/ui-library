@@ -1,8 +1,8 @@
 {
   "name": "@subhanprime2/ui-library",
-  "version": "1.2.17",
+  "version": "1.2.18",
   "description": "Your package description goes here",
-  "main": "dist/esm/index.js",
+  "main": "dist/cjs/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
