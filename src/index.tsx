@@ -1,2 +1,4 @@
-export * from "./Card/Card";
-export * from './filter/Filter';
+// export * from "./Card/Card";
+// export * from './filter/Filter';
+import Filter from "./filter/Filter";
+export default Filter;
