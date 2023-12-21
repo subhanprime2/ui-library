@@ -7,7 +7,7 @@ import FilterScreen from './FilterScreen';
 import FilterSearch from './FilterSearch';
 import FilterSelectedDisplay from './FilterSelectedDisplay';
 import FilterDropdown from './FilterDropdown';
-import '../index.css'
+// import '../index.css'
 
 interface Data {
   tasks: TaskMap | null;
