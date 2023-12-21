@@ -1,6 +1,6 @@
 {
   "name": "@subhanprime2/ui-library",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Your package description goes here",
   "main": "index.tsx",
   "types": "dist/index.d.ts",
@@ -43,7 +43,6 @@
     "@subhanprime2:registry": "https://npm.pkg.github.com"
   },
   "dependencies": {
-    "@subhanprime2/ui-library": "^1.2.1",
     "framer-motion": "^10.16.16",
     "lucide-react": "^0.298.0"
   },
