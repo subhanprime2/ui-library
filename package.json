@@ -1,6 +1,6 @@
 {
   "name": "@subhanprime2/ui-library",
-  "version": "1.2.15",
+  "version": "1.2.16",
   "description": "Your package description goes here",
   "main": "dist/esm/index.js",
   "types": "dist/index.d.ts",
