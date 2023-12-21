@@ -1,6 +1,6 @@
 {
   "name": "@subhanprime2/ui-library",
-  "version": "1.2.12",
+  "version": "1.2.13",
   "description": "Your package description goes here",
   "main": "./src/index.tsx",
   "types": "dist/index.d.ts",
