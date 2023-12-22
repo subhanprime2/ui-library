@@ -9,24 +9,24 @@ import FilterSelectedDisplay from './FilterSelectedDisplay';
 import FilterDropdown from './FilterDropdown';
 // import '../index.css'
 
-interface Data {
+export interface Data {
   tasks: TaskMap | null;
   projects: ProjectsAllMap | null;
   people: PeopleMap | null,
-  peopleTasks:PeopleTasks[] | null;
+  peopleTasks: PeopleTasks[] | null;
   projectTasks: ProjectTask[] | null;
   roles: Role[] | null;
   department: Department[] | null;
   tags: Tag[] | null;
-  projectOwner:People[] | null;
-  managers:People[] | null;
+  projectOwner: People[] | null;
+  managers: People[] | null;
 }
 
-interface FilterProps {
-  sheduler:Data;
+export interface FilterProps {
+  sheduler: Data;
   filters: FilterType[];
   selectedFilter: SelectedFilterType[]
-  resetFilters:()=>void;
+  resetFilters: () => void;
   clearSelectedFilters: () => void;
   addSelectedFilter: (data: SelectedFilterType) => void;
   updateSelectedFilter: (index: number, data: SelectedFilterType) => void;
@@ -43,7 +43,7 @@ function Filter({
   addSelectedFilter,
   updateSelectedFilter,
   deleteSelectedFilter,
-}:FilterProps):JSX.Element {
+}: FilterProps): JSX.Element {
   const [isOpen, setIsOpen] = useState(false);
   const [iconFlag, setIconFlag] = useState(false);
   const [search, setSearch] = useState('');
@@ -71,7 +71,7 @@ function Filter({
   }, []);
   // map on data instead oof filters and attach it to and use lodash
   const updateFilters = () => {
-    let filteredData:FilterDataMap = initialFilterData;
+    let filteredData: FilterDataMap = initialFilterData;
     foreignDataArray.forEach((f) => {
       const data = sheduler[f];
       if (data) {
@@ -101,7 +101,7 @@ function Filter({
     }
 
     resetFilters();
-    return () => {};
+    return () => { };
   }, [search]);
   useEffect(() => {
     setIsOpen(false);
@@ -139,11 +139,11 @@ function Filter({
     setSelectedFilterType(null);
   };
 
-  const handleSearchUpdate = (e:any) => {
+  const handleSearchUpdate = (e: any) => {
     setSearch(e.target.value);
   };
 
-  const handleOpen = (type:'full' | 'selected' | 'new', ind?:number) => {
+  const handleOpen = (type: 'full' | 'selected' | 'new', ind?: number) => {
     if (type === 'full' || type === 'new') {
       handleSelectNone();
       setIsOpen(true);
@@ -190,12 +190,12 @@ function Filter({
             />
           ))}
           {selectedFilter.length > 2 && (
-          <FilterDropdown
-            selectedFilter={selectedFilter}
-            handleOpen={handleOpen}
-            updateSelectedFilter={updateSelectedFilter}
-            deleteSelectedFilter={deleteSelectedFilter}
-          />
+            <FilterDropdown
+              selectedFilter={selectedFilter}
+              handleOpen={handleOpen}
+              updateSelectedFilter={updateSelectedFilter}
+              deleteSelectedFilter={deleteSelectedFilter}
+            />
           )}
           <div data-testid="add-filter" onClick={() => handleOpen('new')} className="flex items-center rounded-lg text-[13px] h-6 select-none cursor-pointer">
             <div style={{ backgroundColor: selectedFilter[selectedFilter.length - 1].mainFilter.color }} className=" px-2 hover:brightness-95 rounded-md h-full flex items-center">

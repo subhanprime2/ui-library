@@ -1,2 +1,2 @@
-export { default as Filter } from "./filter/Filter";
-export { default as Card } from "./Card/Card";
+export { default as Filter, FilterProps, Data } from "./filter/Filter";
+export { default as Card, CardProps } from './Card/Card';
